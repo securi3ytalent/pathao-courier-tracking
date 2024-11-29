@@ -1,0 +1,110 @@
+
+<!-- 
+https://securitytalent.net
+- https://t.me/Securi3yTalent
+- https://www.facebook.com/Securi3ytalent/
+- https://x.com/Securi3yTalent
+- Hire Freelance Developers WhatsApp: 01960995649
+ -->
+ 
+<title>Pathao Tracking</title>
+    <style>
+        #containerrr {
+            max-width: 600px;
+            margin: 100px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        #h1_tag{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #trackingForm label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 6px;
+        }
+        #trackingForm input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        #trackingForm input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #387478;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #trackingForm input[type="submit"]:hover {
+            background-color: #387478;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            display: none; /* Initially hidden */
+        }
+        #result a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        #result a:hover {
+            text-decoration: underline;
+        }
+        #containerrr a img{
+            display: block;
+            margin: auto;
+        }
+    </style>
+
+    <div id="containerrr">
+        <a href="#"><img src="https://pathao.com/bn/wp-content/uploads/sites/6/2019/02/Pathao_Logo-.svg" alt=""></a>
+        <h1 id="h1_tag">Track Your Pathao Consignment</h1>
+        <form id="trackingForm">
+            <label for="ID">Consignment ID:</label>
+            <input type="text" id="ID" name="ID" placeholder="Enter Consignment ID" required>
+
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" placeholder="Enter Phone Number" required>
+
+            <input type="submit" value="Track">
+        </form>
+
+        <!-- Section to display result -->
+        <div id="result">
+            <p><strong>Tracking URL:</strong></p>
+            <a id="trackingLink" href="" target="_blank">Click here to track your consignment</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('trackingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the input values
+            var consignmentID = document.getElementById('ID').value;
+            var phoneNumber = document.getElementById('phone_number').value;
+
+            // Construct the URL
+            var url = `https://merchant.pathao.com/tracking?consignment_id=${consignmentID}&phone=${phoneNumber}`;
+
+            // Show the result section
+            var resultDiv = document.getElementById('result');
+            var trackingLink = document.getElementById('trackingLink');
+
+            // Set the generated URL as the href of the link
+            trackingLink.href = url;
+
+            // Display the result section
+            resultDiv.style.display = 'block';
+        });
+    </script>
+
