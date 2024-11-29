@@ -46,10 +46,10 @@ https://www.npmjs.com/package/pathao-tracker-bd
 
 
 ## HTML Page Use
-HTML Page use uou can Downloads index.html page only.
+HTML Page use Downloads index.html page only.
 
 ## Wordpress Use
-wordpress elementor html code use then copy only wordpress.html code only.
+wordpress elementor html use then copy only wordpress.html code only.
 ## Demo
 
 https://maaz.com.bd/tracking-order/
