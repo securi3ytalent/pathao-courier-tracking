@@ -71,5 +71,5 @@ For support, email devmehedi101@gmail.com or join our channel:
 - https://t.me/Securi3yTalent
 - https://www.facebook.com/Securi3ytalent/
 - https://x.com/Securi3yTalent
-Hire Freelance Developers WhatsApp: 01960995649
+- Hire Freelance Developers WhatsApp: 01960995649
 
